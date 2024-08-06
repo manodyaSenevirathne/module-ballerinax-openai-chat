@@ -7,7 +7,7 @@ _Edition_: Swan Lake
 
 This document records the sanitation done on top of the official OpenAPI specification from OpenAI Finetune. The OpenAPI specification is obtained from the [OpenAPI specification for the OpenAI API](https://github.com/openai/openai-openapi/blob/master/openapi.yaml). These changes are implemented to enhance the overall usability and readability of the generated client.
 
-1. **Removed the `Deprecated: true` property of certain schemas**:
+1. **Removed the `Deprecated: true` property from the below schemas**:
 
    - **Original**:
       - Deprecated: `true`
@@ -23,7 +23,7 @@ This document records the sanitation done on top of the official OpenAPI specifi
    - **Changed Schemas**: `CreateCompletionRequest`,`ChatCompletionStreamOptions`,`CreateChatCompletionRequest`
 
    - **Original**:
-      - defaullt: `null`
+      - default: `null`
 
    - **Updated**:
       - Removed the `default` parameter 
